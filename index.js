@@ -21,7 +21,7 @@ const clockUpdate = function () {
   seconds.textContent = s;
   ampm.textContent = getampm;
 
-  setTimeout(() => {
+  setInterval(() => {
     clockUpdate();
   }, 1000);
 };
